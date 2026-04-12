@@ -4,7 +4,9 @@ const app = express()
 const path = require("path")
 const router = express.Router()
 
-router.get("/homr", (req, res)=>{
+const PORT = process.env.PORT || 3000
+
+router.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname + "/pages/home.html"))
 })
 
@@ -14,6 +16,6 @@ router.get("/contato", (req, res)=>{
 
 app.use(router)
 
-app.listen(3333, ()=>{
+app.listen(PORT, ()=>{
     console.log("Servidor rodando!")
 })
