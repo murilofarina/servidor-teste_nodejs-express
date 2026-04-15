@@ -11,3 +11,5 @@
 **`Projeto simples desenvolvido para explorar conceitos básicos de back-end + front-end.`**
 
 Desenvolvido em <font color="yellow">Javascript</font> com Node.js e Express.
+
+<img width="1920" height="774" alt="envioDados" src="https://github.com/user-attachments/assets/a9c22951-21cc-4e88-9565-5b2015ff2a33" />
