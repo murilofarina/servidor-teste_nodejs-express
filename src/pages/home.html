@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home | Servidor Node.js + Express</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>HOME PAGE</h1>
+<body id="top">
+    <header class="topbar">
+        <div class="topbar__brand">
+            <a href="#top" class="brand-link" aria-label="Voltar para o topo">
+                <img src="img/hard-drive.png" alt="Servidor" />
+            </a>
+        </div>
+        <nav class="topbar__nav" aria-label="Menu principal">
+            <a href="enviaDados.html">Teste</a>
+            <a href="https://www.linkedin.com/in/murilofarina/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/murilofarina" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        <a href="enviaDados.html" class="topbar__cta" aria-label="Testar envio de dados">
+            <img src="img/arrow-up-right.png" alt="Ir para envio de dados" />
+        </a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Servidor com <span>Node.js + Express</span></h1>
+                <p class="hero__subtitle">Projeto simples desenvolvido para explorar conceitos<br>básicos de back-end + front-end.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="enviaDados.html">
+                        Testar envio de dados
+                        <img src="img/arrow-right.png" alt="Seta" class="btn__icon" />
+                    </a>
+                    <a class="btn btn--outline" href="https://github.com/murilofarina/servidor-teste_nodejs-express" target="_blank" rel="noopener">
+                        <img src="img/github.png" alt="GitHub" class="btn__icon" />
+                        Github do projeto
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features__grid">
+                <article class="card">
+                    <img src="img/nodejsLogo.png" alt="Node.js" class="card__logo" />
+                    <h3>Node.js</h3>
+                    <p>O motor JavaScript que permite rodar código no lado do servidor, processando requisições com eficiência e velocidade.</p>
+                </article>
+                <article class="card">
+                    <img src="img/expressLogo.png" alt="Express" class="card__logo" />
+                    <h3>Express</h3>
+                    <p>Framework minimalista e flexível para criar rotas robustas e APIs de alto desempenho.</p>
+                </article>
+                <article class="card">
+                    <img src="img/renderLogo.png" alt="Render" class="card__logo" />
+                    <h3>Render</h3>
+                    <p>Plataforma de nuvem que simplifica o deploy e a hospedagem de aplicações com integração direta ao Git.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer__inner">
+            <div class="footer__text">
+                <p class="footer__title">Desenvolvido por Murilo Farina</p>
+                <p>Estudante de Sistemas de Informação na Unoeste | 3° Termo</p>
+            </div>
+            <div class="footer__actions">
+                <a href="mailto:murilo.farina@hotmail.com" class="icon-btn" aria-label="Enviar email para Murilo Farina">
+                    <img src="img/emailButton.png" alt="Email" />
+                </a>
+                <a href="https://www.linkedin.com/in/murilofarina/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn de Murilo Farina">
+                    <img src="img/linkedinButton.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/murilofarina" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub de Murilo Farina">
+                    <img src="img/githubButton.png" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

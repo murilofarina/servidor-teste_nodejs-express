@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Envio de Dados | Servidor Node.js + Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <header class="topbar">
+        <div class="topbar__brand">
+            <a href="#top" class="brand-link" aria-label="Voltar para o topo">
+                <img src="img/hard-drive.png" alt="Servidor" />
+            </a>
+        </div>
+        <nav class="topbar__nav" aria-label="Menu principal">
+            <a href="enviaDados.html">Teste</a>
+            <a href="https://www.linkedin.com/in/murilofarina/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/murilofarina" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        <a href="home.html" class="topbar__cta" aria-label="Voltar para a página inicial">
+            <img src="img/arrow-up-right.png" alt="Ir para home" />
+        </a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Teste de <span>Envio de Dados</span></h1>
+                <p class="hero__subtitle">Este é um ambiente de testes. Os dados não serão armazenados.</p>
+            </div>
+
+            <div class="form-page">
+                <div class="form-page__card">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-field">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" autocomplete="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Digite sua mensagem de teste aqui..." rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+                        <div id="feedbackMessage" class="feedback" role="status" aria-live="polite"></div>
+                    </form>
+                    <p class="form-page__info">
+                        ⚠️ Após o envio, é possível visualizar os dados diretamente no console do servidor.<br>
+                        Verifique a aba Network do navegador, demonstrando a comunicação entre o frontend e o backend construída com Node.js e Express.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer__inner">
+            <div class="footer__text">
+                <p class="footer__title">Desenvolvido por Murilo Farina</p>
+                <p>Estudante de Sistemas de Informação na Unoeste | 3° Termo</p>
+            </div>
+            <div class="footer__actions">
+                <a href="mailto:murilo.farina@hotmail.com" class="icon-btn" aria-label="Enviar email para Murilo Farina">
+                    <img src="img/emailButton.png" alt="Email" />
+                </a>
+                <a href="https://www.linkedin.com/in/murilofarina/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn de Murilo Farina">
+                    <img src="img/linkedinButton.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/murilofarina" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub de Murilo Farina">
+                    <img src="img/githubButton.png" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
