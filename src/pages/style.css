@@ -149,12 +149,20 @@ main {
     font-weight: 600;
 }
 
-.hero__subtitle {
+.hero__subtitle1 {
     margin: 1.4rem auto 0;
     color: #707070;
     font-size: 20px;
     line-height: 1.5;
     margin: 2.5rem 0 4rem 0;
+}
+
+.hero__subtitle2 {
+    margin: 1.4rem auto 0;
+    color: #707070;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 2.5rem 0 0.5rem 0;
 }
 
 .hero__actions {
@@ -187,11 +195,14 @@ main {
 .form-field {
     display: grid;
     gap: 0.75rem;
+    text-align: left;
 }
 
 .form-field label {
     color: #252525;
     font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: left;
 }
 
 .form-field input,
@@ -204,17 +215,17 @@ main {
     padding: 1.25rem 1.5rem;
     font-size: 1rem;
     outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: border-color 0.1s ease, box-shadow 0.1s ease;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
     border-color: #252525;
-    box-shadow: 0 0 0 4px rgba(37, 37, 37, 0.06);
+    box-shadow: none;
 }
 
 .form-field textarea {
-    resize: vertical;
+    resize: none;
     min-height: 180px;
 }
 
