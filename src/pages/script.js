@@ -44,6 +44,8 @@ form.addEventListener('submit', async (event) => {
         const data = await response.json();
 
         if (data.sucesso) {
+            console.log('Mensagem enviada para o servidor:', { name, message });
+            console.log('Resposta do servidor:', data);
             setFeedback('Mensagem enviada com sucesso!', 'success');
             form.reset();
         } else {
